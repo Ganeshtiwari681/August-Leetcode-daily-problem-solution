@@ -1,0 +1,11 @@
+class Solution:
+    def countSeniors(self, details: List[str]) -> int:
+        lst=[]
+        count=0
+        for i in details:
+            lst.append(int(i[11:13]))
+        for i in lst:
+            if i>60:
+                count+=1
+        return count
+        
